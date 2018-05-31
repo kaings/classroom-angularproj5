@@ -11,7 +11,8 @@
       <p appBasicHighlightRenderer2>Paragraph 3</p>
     </div>
     <div class="col-md-6">
-      <p appBasicHighlightHostbinding>Paragraph 4</p>
+      <p appBasicHighlightHostbinding [initialColor]="'grey'" [highlightColor]="'orange'">Paragraph 4</p>
+      <!--<p [initialColor]="'grey'" [appBasicHighlightHostbinding]="'orange'">Paragraph 4</p>--> <!-- rename property with alias similar to selector name -->
     </div>
     <div class="col-md-6">
       <p>Paragraph 5</p>
