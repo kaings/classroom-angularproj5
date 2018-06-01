@@ -1,6 +1,12 @@
 <div class="container">
   <h1 class="text-center">Directive!</h1>
   <div class="row">
+    <div class="text-center">
+      <div class="col-md-12">
+        <input class="form-control" type="text" [(ngModel)]="inputVal">
+      </div>
+    </div>
+    <br>
     <div class="col-md-6">
       <p>Paragraph 1</p>
     </div>
@@ -22,6 +28,8 @@
     </div>
   </div>
 
+  <hr>
+
   <div class="text-center">
     <h3>--Using ngIf--</h3>
     <div class="text-center" *ngIf="status">
@@ -41,7 +49,21 @@
   <div class="text-center">
     <h3>--Using Custom Structural Directive--</h3> <!-- reverse to ngIf, trigger when the condition is false -->
     <div class="text-center" *appStructuralDirective="status">
-      <h3>The Switch is OFF</h3>
+      <h3 appBasicHighlightHostbinding initialColor="transparent" highlightColor="orange">The Switch is OFF</h3>
     </div>
   </div>
+
+  <hr>
+
+  <div class="text-center" [ngSwitch]="inputVal">
+    <div>
+      <p *ngSwitchCase="1">Value Input is 1</p>
+      <p *ngSwitchCase="2">Value Input is 2</p>
+      <p *ngSwitchCase="3">Value Input is 3</p>
+      <p *ngSwitchCase="4">Value Input is 4</p>
+      <p *ngSwitchCase="5">Value Input is 5</p>
+      <p *ngSwitchDefault>Value Input is above 5</p>
+    </div>
+  </div>
+
 </div>
