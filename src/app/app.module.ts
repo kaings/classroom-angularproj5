@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
 import { BasicHighlightRenderer2Directive } from './basic-highlight-renderer2/basic-highlight-renderer2.directive';
 import { BasicHighlightHostbindingDirective } from './basic-highlight-hostbinding/basic-highlight-hostbinding.directive';
+import { StructuralDirectiveDirective } from './structural-directive/structural-directive.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     BasicHighlightDirective,
     BasicHighlightRenderer2Directive,
-    BasicHighlightHostbindingDirective
+    BasicHighlightHostbindingDirective,
+    StructuralDirectiveDirective
   ],
   imports: [
     BrowserModule
