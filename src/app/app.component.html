@@ -17,5 +17,31 @@
     <div class="col-md-6">
       <p>Paragraph 5</p>
     </div>
+    <div class="col-md-6">
+      <button class="btn btn-success" (click)="status=!status">ngIf ON/OFF</button>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <h3>--Using ngIf--</h3>
+    <div class="text-center" *ngIf="status">
+      <h3>The Switch is ON</h3>
+    </div>
+    <br>
+
+    <ng-template [ngIf]="status">
+      <div class="text-center">
+        <h3>The Switch is ON</h3>
+      </div>
+    </ng-template>
+  </div>
+
+  <hr>
+
+  <div class="text-center">
+    <h3>--Using Custom Structural Directive--</h3> <!-- reverse to ngIf, trigger when the condition is false -->
+    <div class="text-center" *appStructuralDirective="status">
+      <h3>The Switch is OFF</h3>
+    </div>
   </div>
 </div>
