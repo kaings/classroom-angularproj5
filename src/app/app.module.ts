@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
 import { BasicHighlightRenderer2Directive } from './basic-highlight-renderer2/basic-highlight-renderer2.directive';
 import { BasicHighlightHostbindingDirective } from './basic-highlight-hostbinding/basic-highlight-hostbinding.directive';
+
 import { StructuralDirectiveDirective } from './structural-directive/structural-directive.directive';
+import { DropdownDirective } from './dropdown/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { StructuralDirectiveDirective } from './structural-directive/structural-
     BasicHighlightDirective,
     BasicHighlightRenderer2Directive,
     BasicHighlightHostbindingDirective,
-    StructuralDirectiveDirective
+    StructuralDirectiveDirective,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
