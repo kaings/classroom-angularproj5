@@ -1,3 +1,23 @@
 .btn {
   margin: 0px 10px;
 }
+
+.show>.dropdown-menu {
+  display: block;
+  left: 10px;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.show>.dropdown-menu a.dropdown-item{
+  display: block;
+  padding: 5px 5px;
+}
+
+.show>.dropdown-menu a.dropdown-item:hover{
+  display: block;
+  padding: 5px 5px;
+  border-radius: 20px;
+  background-color: lightgrey;
+  text-decoration: none;
+}
