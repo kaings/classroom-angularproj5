@@ -48,9 +48,11 @@
 
   <div class="text-center">
     <h3>--Using Custom Structural Directive--</h3> <!-- reverse to ngIf, trigger when the condition is false -->
-    <div class="text-center" *appStructuralDirective="status">
-      <h3 appBasicHighlightHostbinding initialColor="transparent" highlightColor="orange">The Switch is OFF</h3>
-    </div>
+    <ng-template [appStructuralDirective]="status">
+      <div class="text-center">
+        <h3 appBasicHighlightHostbinding initialColor="transparent" highlightColor="orange">The Switch is OFF</h3>
+      </div>
+    </ng-template>
   </div>
 
   <hr>
